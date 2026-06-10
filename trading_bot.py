@@ -16,8 +16,8 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 from telegram import Update
 
 # ==================== CONFIG ====================
-TELEGRAM_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"   # ពី @BotFather
-CHAT_ID        = "YOUR_CHAT_ID"               # ID របស់ Channel/Group
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")   # ពី @BotFather
+CHAT_ID        = os.environ.get("CHAT_ID")               # ID របស់ Channel/Group
 SYMBOL         = "BTC/USDT"
 TIMEFRAME      = "15m"                        # 1m, 5m, 15m, 1h, 4h
 CHECK_INTERVAL = 60                           # seconds (ពិនិត្យរៀងរាល់ 60 វិនាទី)
